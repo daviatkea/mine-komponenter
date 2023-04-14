@@ -1,0 +1,19 @@
+---
+const { href } = Astro.props;
+
+const { pathname } = Astro.url;
+
+const isActive = href === "/" ? pathname === href : pathname.startsWith(href);
+---
+
+<li>
+  <a href={href} aria-current={isActive ? "page" : undefined}>
+    <slot />
+  </a>
+</li>
+
+<style>
+  [aria-current="page"] {
+    color: red;
+  }
+</style>
