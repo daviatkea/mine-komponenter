@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "mine-komponenter",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^3.1.1",
-    "astro": "^2.3.0",
-    "tailwindcss": "^3.3.1"
+    "astro": "^2.3.0"
   }
 }
